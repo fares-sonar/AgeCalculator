@@ -3,7 +3,7 @@ const labels = document.querySelectorAll("label");
 const paragraphs = document.querySelectorAll("form p");
 const span = document.querySelectorAll("span");
 
-function age(e) {
+function age() {
   const day = document.getElementById("day").value;
   const month = document.getElementById("month").value;
   const year = document.getElementById("year").value;

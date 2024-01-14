@@ -11,45 +11,45 @@
 </head>
 <body>
   <main class="max-w-full h-[100vh] flex justify-center items-center bg-light_gray p-8">
-    <div class=" bg-white w-[600px] p-8 rounded-xl rounded-br-[100px]">
+    <div class=" bg-white w-[600px] md:w-[800px] p-8 rounded-xl rounded-br-[100px]">
       <form action="#">
         <div class="flex gap-4">
-          <div class="w-20 lg:w-24">
+          <div class="w-20 lg:w-28">
             <label class="text-sm font-bold text-smokey_gray" for="day">DAY</label>
-            <input itemid="day" class="p-2 w-full block border outline-none rounded-lg font-bold text-lg" type="number" id="day" placeholder="DD" minlength="1" maxlength="2" required>
+            <input itemid="day" class="p-2 w-full block border outline-none rounded-lg font-bold text-lg md:text-3xl" type="number" id="day" placeholder="DD" minlength="1" maxlength="2" required>
             <p class="text-[9px] mt-1"></p>
           </div>
-          <div class="w-20 lg:w-24">
+          <div class="w-20 lg:w-28">
             <label class="text-sm font-bold text-smokey_gray" for="month">MONTH</label>
-            <input id="month" class="p-2 w-full block border outline-none rounded-lg font-bold text-lg" type="number" id="month" placeholder="MM" minlength="1" maxlength="2" required>
+            <input id="month" class="p-2 w-full block border outline-none rounded-lg font-bold text-lg md:text-3xl" type="number" id="month" placeholder="MM" minlength="1" maxlength="2" required>
             <p class="text-[9px] mt-1"></p>
           </div>
-          <div class="w-20 lg:w-24">
+          <div class="w-20 lg:w-28">
             <label class="text-sm font-bold text-smokey_gray" for="year">YEAR</label>
-            <input itemid="year" class="p-2 w-full block border outline-none rounded-lg font-bold text-lg" type="number" id="year" placeholder="YYYY" minlength="4" maxlength="4" required>
+            <input itemid="year" class="p-2 w-full block border outline-none rounded-lg font-bold text-lg md:text-3xl" type="number" id="year" placeholder="YYYY" minlength="4" maxlength="4" required>
             <p class="text-[9px] mt-1"></p>
           </div>
         </div>
         <div class="flex items-center w-full mt-4 ">
           <hr class="w-[45%] lg:w-[90%]">
-          <button class="relative bg-purple hover:bg-off_black rounded-full w-10">
-            <img onclick="age()" class="text-sm p-2 " src="./assets/images/icon-arrow.svg" alt="icon-arrow">
+          <button class="flex justify-center items-center bg-purple hover:bg-off_black rounded-full w-8 md:w-20 h-8 md:h-20">
+            <img onclick="age()" class="p-2 " src="./assets/images/icon-arrow.svg" alt="icon-arrow">
           </button>
             <hr class="w-[45%] lg:w-0">
         </div>
       </form>
       <div>
         <div class="flex  gap-2 items-center">
-          <span id="output-year" class="text-purple text-5xl font-bold">--</span>
-          <p class="text-off_black italic font-extrabold text-5xl">years</p>
+          <span id="output-year" class="text-purple text-3xl md:text-8xl font-bold">--</span>
+          <p class="text-off_black italic font-extrabold text-3xl md:text-8xl">years</p>
         </div>
         <div class="flex gap-2 items-center">
-          <span id="output-month" class="text-purple text-5xl font-bold">--</span>
-          <p class="text-off_black italic font-extrabold text-5xl">month</p>
+          <span id="output-month" class="text-purple text-3xl md:text-8xl font-bold">--</span>
+          <p class="text-off_black italic font-extrabold text-3xl md:text-8xl">month</p>
         </div>
         <div class="flex gap-2 items-center">
-          <span id="output-day" class="text-purple text-5xl font-bold">--</span>
-          <p class="text-off_black italic font-extrabold text-5xl">days</p>
+          <span id="output-day" class="text-purple text-3xl md:text-8xl font-bold">--</span>
+          <p class="text-off_black italic font-extrabold text-3xl md:text-8xl">days</p>
         </div>
       </div>
     </div>
